@@ -45,13 +45,13 @@ Buzzer pasivo
 | [R2425CL13_buzzerActivo_1.py](R2425CL13_buzzerActivo_1.py)             | uPy      | uso basico buzzer Activo             | Buzzer activo                            |
 | [R2425CL13_buzzerPas_in_freq_1.py](R2425CL13_buzzerPas_in_freq_1.py)   | uPy      | uso básico buzzer pasivo             | buzzer pasivo + transistor NPN en GPIO15 |
 | [R2425_CL13_speaker_3notas_1_0.py](R2425_CL13_speaker_3notas_1_0.py)   | uPy      | uso básico altavoz (= buzzer pasivo) | altavoz + transistor NPN en GPIO15       |
-| [P2525_CL13_list_compr_ex1.py](P2525_CL13_list_compr_ex1.py)           | Python   | Ejemplo 1 del pdf                    | ------                                   |
-| [P2525_CL13_list_compr_ex1_1.py](P2525_CL13_list_compr_ex1_1.py)       | Python   | Ejemplo 1.1 del pdf                  |                                          |
-| [P2525_CL13_list_compr_ex2.py](P2525_CL13_list_compr_ex2.py)           | Python   | Ejemplo 2 del pdf                    |                                          |
-| [P2525_CL13_list_compr_ex2_1.py](P2525_CL13_list_compr_ex2_1.py)       | Python   | Ejemplo 2.1 del pdf                  |                                          |
+| [P2425_CL13_list_compr_ex1.py](P2425_CL13_list_compr_ex1.py)           | Python   | Ejemplo 1 del pdf                    | ------                                   |
+| [P2425_CL13_list_compr_ex1_1.py](P2425_CL13_list_compr_ex1_1.py)       | Python   | Ejemplo 1.1 del pdf                  |                                          |
+| [P2425_CL13_list_compr_ex2.py](P2425_CL13_list_compr_ex2.py)           | Python   | Ejemplo 2 del pdf                    |                                          |
+| [P2425_CL13_list_compr_ex2_1.py](P2425_CL13_list_compr_ex2_1.py)       | Python   | Ejemplo 2.1 del pdf                  |                                          |
 | [R2425_CL13_speaker_in_note_2_0.py](R2425_CL13_speaker_in_note_2_0.py) |          |                                      |                                          |
 | [R2425_CL13_speaker_FJac_3_0.py](R2425_CL13_speaker_FJac_3_0.py)       |          |                                      |                                          |
-| [R2425_CL13_speaker_FJac_3_3.py](R2425_CL13_speaker_FJac_3_3.py)       |          |                                      |                                          |
+| [R2425_CL13_speaker_FJac_3_2.py](R2425_CL13_speaker_FJac_3_2.py)       |          |                                      |                                          |
 
 ### Conexionado
 
