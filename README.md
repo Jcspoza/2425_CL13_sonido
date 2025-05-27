@@ -63,7 +63,7 @@ Pin - --> GPIO 26
 
 **Buzzer pasivo a GPIO 15**
 
-<img title="" src="file:///C:/Users/josec/OneDrive/Documentos/GitHub/2425_CL13_sonido/pico_npn_speaker.png" alt="" width="684">
+<img title="" src="./pico_npn_speaker.png" alt="" width="684">
 
 
 
