@@ -55,7 +55,7 @@ Buzzer pasivo
 
 ### Conexionado
 
-**Buzzer Activo**
+**Buzzer Activo**: solo se usa 1 vez
 
 Pin + ---> 3.3 vol
 
@@ -63,9 +63,9 @@ Pin - --> GPIO 26
 
 **Buzzer pasivo a GPIO 15**
 
+
+
 <img title="" src="./pico_npn_speaker.png" alt="" width="684">
-
-
 
 ### Libreria
 
