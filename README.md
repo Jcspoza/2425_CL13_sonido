@@ -63,8 +63,6 @@ Pin - --> GPIO 26
 
 **Buzzer pasivo a GPIO 15**
 
-
-
 <img title="" src="./pico_npn_speaker.png" alt="" width="684">
 
 ### Libreria
@@ -91,26 +89,87 @@ Para todo lo que sigue a partir de aqui usare el [pdf,](R2425_CL13_sonido_basico
 
 ## [R] 1. Sonido básico 1 en Pico con PWM
 
-### Sonido solo buzzer: Activo / pasivo
+### Consumo y uso de un transistor en modo corte-saturación
+
+Según informacion en internet :
 
 - **Buzzer Activo:** Generalmente consume alrededor de 30 mA. Por ejemplo, un buzzer activo de 5V puede consumir 30 mA. 
 - **Buzzer Pasivo:** Puede consumir menos de 25 mA.
 
-The Raspberry Pi Pico's GPIO pins provide a maximum output of 3.3V and can source or sink a maximum of 25mA (milliamps). They are not designed to power high-power devices and are typically used for controlling small components like LEDs.
+Los pines GPIO de la Raspberry Pi Pico ( a 3.3 volt) pueden dar un maximo de corriente de 25mA (miliamperios). No estan  diseñados para dar potencia
 
-### Sonido : NPN+Altavoz & 1ros programas test
+Vamos a comprobar con un polímetro nuestro caso
+
+- **Buzzer Activo:** con bateria Lipo de 3.9 volt = 15 mA 
+- **Buzzer Pasivo:** on bateria Lipo de 3.9 volt = **120 - 140  mA**
+
+En el caso del buzzer pasivo que es el que nos interesa, vemos que necesitamos una solución que entregue mas potencia conservando el control ==> transistor (BJC) en modo corte-saturacion
+
+Un buen tutorial para entender el uso de transistores BJC en modo corte-saturación es 
+
+[Transistor bipolar BJT y Arduino](https://programarfacil.com/blog/arduino-blog/transistor-bipolar-bjt-npn/)
+
+o leer el capitulo 'El transistor bipolar' del libro 'Electrónica para makers Guía completa' de Paolo Aliverti
+
+**NO vamos a profundizar <u>en esta lección</u>, en como funciona un transistor en modo corte-saturación, solo diremos:**
+
+> Transistor (BJC) : es como usar un interruptor controlado por un GPIO del microcontrolador PICO, que puede  abrir o cerrar circuitos con mucho consumo típicamente hasta 700 mA ( con los transistores usados S8050) y si es necesario mas voltaje que los 3.3vol, típicamente 5volt, 9volt o 12volt
+
+Hay otras alternativas : rele, optoaclopador, ..pero son mas caras o complejas
+
+Nota: El tuto de sunfounder sobre transistores NO es muy bueno
+
+[Transistor &mdash; SunFounder Kepler Kit for Raspberry Pi Pico W 1.0 documentation](https://docs.sunfounder.com/projects/kepler-kit/en/latest/component/component_transistor.html)
+
+### Sonido solo buzzer: Activo
+
+[R2425CL13_buzzerActivo_1.py](R2425CL13_buzzerActivo_1.py)
+
+no esta en pdf
+
+### Sonido solo buzzer pasivo :  NPN+Altavoz & 1ros programas test
+
+Seguir el [pdf](R2425_CL13_sonido_basico.pdf) 
+
+Programas: 
+
+[R2425CL13_buzzerPas_in_freq_1.py](R2425CL13_buzzerPas_in_freq_1.py)
+
+[R2425_CL13_speaker_3notas_1_0.py](R2425_CL13_speaker_3notas_1_0.py)
 
 ## [PyR] List comprehension y Diccionarios en Python
+
+Seguir el [pdf](R2425_CL13_sonido_basico.pdf)
+
+Programas:
+
+[P2425_CL13_list_compr_ex1.py](P2425_CL13_list_compr_ex1.py)
+
+[P2425_CL13_list_compr_ex1_1.py](P2425_CL13_list_compr_ex1_1.py)
+
+[P2425_CL13_list_compr_ex2.py](P2425_CL13_list_compr_ex2.py)
+
+[P2425_CL13_list_compr_ex2_1.py](P2425_CL13_list_compr_ex2_1.py)
 
 ## [R] Sonido básico 2
 
 ### Frecuencias de notas del piano
 
-  Ver pdf
+Seguir el [pdf](R2425_CL13_sonido_basico.pdf)
+
+Programas:
+
+[R2425_CL13_speaker_in_note_2_0.py](R2425_CL13_speaker_in_note_2_0.py)
 
 ### Canción Frère Jacques modo simple y con listas anidadas
 
-  Ver pdf
+Seguir el [pdf](R2425_CL13_sonido_basico.pdf)
+
+Programas:
+
+[R2425_CL13_speaker_FJac_3_0.py](R2425_CL13_speaker_FJac_3_0.py)
+
+[R2425_CL13_speaker_FJac_3_2.py](R2425_CL13_speaker_FJac_3_2.py)
 
 ## Preguntas sobre la Clase 13 - 10 minutos
 
