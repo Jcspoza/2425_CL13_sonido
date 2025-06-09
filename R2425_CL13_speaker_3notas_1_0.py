@@ -22,7 +22,7 @@ def tone(pin,frequency,duration):
     """Hace sonar un altavoz en 'pin'(+NPN) con onda PWM de frecuencia='frequency' durante 'duration' miliseg     
     """
     pin.freq(frequency)
-    pin.duty_u16(40000)
+    pin.duty_u16(50000)
     utime.sleep_ms(duration)
     pin.duty_u16(0)
 

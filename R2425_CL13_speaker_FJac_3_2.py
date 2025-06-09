@@ -16,7 +16,7 @@ import utime
 p_ucontroler = "Pico W & Pico _"
 p_keyOhw = "NPN + Speaker on GPIO15"
 p_project = "Play the song Frere J w. list & tuplas- External speaker with NPN - Piano notes"
-p_version = "3.1"
+p_version = "3.2"
 print(f"Microcontroler: {p_ucontroler} - Key other HW : {p_keyOhw}")
 print(f"Program: {p_project} - Version: {p_version}")
 # Informative block - end
@@ -67,7 +67,7 @@ notesFreq = get_piano_notes()
 # print('Notas posibles: las 88 del piano con la siguiente notacion')
 # print(notesFreq.keys())
 
-BPM = 150 # Beats per minute para Frere JaqueS
+BPM = 100 # Beats per minute para Frere JaqueS
 BPMEAS = 4 # 4 /4 Ritmo de Frere Jacques
 
 N = 4 * 60000 // (BPM * BPMEAS) # 60000 = milisegundos en 1 minuto
@@ -82,8 +82,8 @@ compasesNotaDur = [[('C4',N), ('D4',N), ('E4',N), ('C4',N)], # COMPAS 1
                   [('E4',N), ('F4',N), ('G4',B)], # COMPAS 4
                   [('G4',C), ('A4',C), ('G4',C), ('F4',C), ('E4',N), ('C4',N)], # COMPAS 5
                   [('G4',C), ('A4',C), ('G4',C), ('F4',C), ('E4',N), ('C4',N)], # COMPAS 6
-                  [('C4',N), ('G4',N), ('C4',B)], # COMPAS 7
-                  [('C4',N), ('G4',N), ('C4',B)], # COMPAS 8
+                  [('C4',N), ('G3',N), ('C4',B)], # COMPAS 7
+                  [('C4',N), ('G3',N), ('C4',B)], # COMPAS 8
                  ]
 
 for comp in range(0, len(compasesNotaDur)):
